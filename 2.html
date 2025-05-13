@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="userInput" placeholder="Enter a number">
+    <button onclick="checkInput()">Check</button>
+
+    <script>
+        input = document.getElementById('userInput');
+        function checkInput() {
+            if (input.value < 10) {
+                alert('The number is less than 10');
+            } else if (input.value > 10) {
+                alert('The number is higher than 10');
+            } else if (input.value == 10) {
+                alert('The number is 10');
+            }else {
+                alert('Please insert a number!');
+            }
+        }
+    </script>
+</body>
+
+</html>
